@@ -57,7 +57,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="logo pull-left">
-                        <a href="{{route('allProducts')}}"><img src="images/home/logo.png" alt="" /></a>
+                        <a href="{{route('allProducts')}}"><img src="images/home/logo.jpg" alt="" width="300px" height="150px"/></a>
                     </div>
                     <div class="btn-group pull-right">
 {{--                        <div class="btn-group">--}}
