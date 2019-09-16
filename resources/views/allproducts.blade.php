@@ -73,14 +73,14 @@
                         <div class="carousel-inner">
                             <div class="item active">
                                 <div class="col-sm-6">
-                                    <h1><span>E</span>-SHOPPER</h1>
-                                    <h2>E-Commerce</h2>
+                                    <h1><span>MAASAI</span>-BEADS</h1>
+                                    <h2></h2>
                                     <p>Your trusted E-commerse store that provides quality goods for you and for your family. </p>
                                     <button type="button" class="btn btn-default get">Get it now</button>
                                 </div>
                                 <div class="col-sm-6">
                                     <img src="images/home/girl1.jpg" class="girl img-responsive" alt="" />
-                                    <img src="images/home/pricing.png"  class="pricing" alt="" />
+{{--                                    <img src="images/home/pricing.png"  class="pricing" alt="" />--}}
                                 </div>
                             </div>
                             <div class="item">
