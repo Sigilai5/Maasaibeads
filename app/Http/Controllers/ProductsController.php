@@ -17,7 +17,7 @@ class ProductsController extends Controller
     //
     public function index(){
 
-        $products = Product::paginate(3);  //Product::all();
+        $products = Product::paginate(10);  //Product::all();
         $title = 'Maasaibeads';
 
         return view('allproducts')->with(compact('products'))->with(compact('title'));
