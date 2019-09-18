@@ -48,7 +48,7 @@
                 <div class="col-sm-12">
                     <div class="search_box pull-right">
                         <form action="search" method="get">
-                            <input type="text" name="searchText" placeholder="Search"/>
+                            <input type="text" name="searchText" placeholder="Search" width="100px"/>
 {{--                            <button type="submit">Search</button>--}}
                         </form>
 
@@ -190,10 +190,10 @@
 {{--                                        </div>--}}
                                     </div>
                                     <div class="choose">
-                                        <ul class="nav nav-pills nav-justified">
-                                            <li><a href="#"><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
+{{--                                        <ul class="nav nav-pills nav-justified">--}}
+{{--                                            <li><a href="#"><i class="fa fa-plus-square"></i>Add to wishlist</a></li>--}}
 {{--                                            <li><a href="#"><i class="fa fa-plus-square"></i>Add to compare</a></li>--}}
-                                        </ul>
+{{--                                        </ul>--}}
                                     </div>
                                 </div>
                             </div>
