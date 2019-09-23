@@ -49,7 +49,7 @@
                                     <p>{{$item['data']['description']}} - {{$item['data']['type']}}</p>
                                     <p>{{$item['data']['price']}}</p>
                                     <p class="cart_total_price">{{$item['totalSinglePrice']}}</p>
-                                    <a class="cart_quantity_delete" href="{{route('DeleteItemFromCart',['id' => $item['data']['id']])}}"><i class="fa fa-times"></i></a>
+                                    <a class="cart_quantity_delete" href="{{route('DeleteItemFromCart',['id' => $item['data']['id']])}}"><i class="fa fa-trash-o"></i></a>
 
 
                                     <div class="cart_quantity_button">
