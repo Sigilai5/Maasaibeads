@@ -39,31 +39,70 @@
 
                 @foreach($cartItems->items as $item)
 
-                    <tr>
-                        <td class="cart_product">
-                            <a href=""><img src="{{Storage::disk('local')->url('product_images/'.$item['data']['image'])}}" alt=""></a>
-                        </td>
-                        <td class="cart_description">
-                            <h4><a href="">{{$item['data']['name']}}</a></h4>
-                            <p>{{$item['data']['description']}} - {{$item['data']['type']}}</p>
-                            <p>Web ID: {{$item['data']['id']}}</p>
-                        </td>
-                        <td class="cart_price">
-                            <p>{{$item['data']['price']}}</p>
-                        </td>
-                        <td class="cart_quantity">
-                            <div class="cart_quantity_button">
-                                <a class="cart_quantity_up" href="{{route('IncreaseSingleProduct',['id' => $item['data']['id']])}}"> + </a>
-                                <input class="cart_quantity_input" type="text" name="quantity" value="{{$item['quantity']}}" autocomplete="off" size="2">
-                                <a class="cart_quantity_down" href="{{route('DecreaseSingleProduct',['id' => $item['data']['id']])}}"> - </a>
+                    <tr width="400px">
+
+                        <div class="product-image-wrapper">
+                            <div class="single-products">
+                                <div class="productinfo text-center">
+                                    <img src="{{Storage::disk('local')->url('product_images/'.$item['data']['image'])}}" alt="" width="0.2" height="500"/>
+                                    <h2>{{$item['data']['name']}}</h2>
+                                    <p>{{$item['data']['description']}} - {{$item['data']['type']}}</p>
+                                    <p>{{$item['data']['price']}}</p>
+                                    <p class="cart_total_price">{{$item['totalSinglePrice']}}</p>
+                                    <a class="cart_quantity_delete" href="{{route('DeleteItemFromCart',['id' => $item['data']['id']])}}"><i class="fa fa-times"></i></a>
+
+
+                                    <div class="cart_quantity_button">
+                                                                        <a class="cart_quantity_up" href="{{route('IncreaseSingleProduct',['id' => $item['data']['id']])}}"> + </a>
+                                                                        <input class="cart_quantity_input" type="text" name="quantity" value="{{$item['quantity']}}" autocomplete="off" size="2">
+                                                                        <a class="cart_quantity_down" href="{{route('DecreaseSingleProduct',['id' => $item['data']['id']])}}"> - </a>
+                                                                    </div>
+
+
+
+                                </div>
+                                {{--                                        <div class="product-overlay">--}}
+                                {{--                                            <div class="overlay-content">--}}
+                                {{--                                                <h2>{{$product->price}}</h2>--}}
+                                {{--                                                <p>{{$product->name}}</p>--}}
+                                {{--                                                <a href="{{route('AddToCartProduct',['id'=>$product->id])}}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>--}}
+                                {{--                                            </div>--}}
+                                {{--                                        </div>--}}
                             </div>
-                        </td>
-                        <td class="cart_total">
-                            <p class="cart_total_price">{{$item['totalSinglePrice']}}</p>
-                        </td>
-                        <td class="cart_delete">
-                            <a class="cart_quantity_delete" href="{{route('DeleteItemFromCart',['id' => $item['data']['id']])}}"><i class="fa fa-times"></i></a>
-                        </td>
+                            <div class="choose">
+                                {{--                                        <ul class="nav nav-pills nav-justified">--}}
+                                {{--                                            <li><a href="#"><i class="fa fa-plus-square"></i>Add to wishlist</a></li>--}}
+                                {{--                                            <li><a href="#"><i class="fa fa-plus-square"></i>Add to compare</a></li>--}}
+                                {{--                                        </ul>--}}
+                            </div>
+                        </div>
+
+
+
+{{--                        <td class="cart_product">--}}
+{{--                            <a href=""><img src="{{Storage::disk('local')->url('product_images/'.$item['data']['image'])}}" alt=""></a>--}}
+{{--                        </td>--}}
+{{--                        <td class="cart_description">--}}
+{{--                            <h4><a href="">{{$item['data']['name']}}</a></h4>--}}
+{{--                            <p>{{$item['data']['description']}} - {{$item['data']['type']}}</p>--}}
+{{--                            <p>Web ID: {{$item['data']['id']}}</p>--}}
+{{--                        </td>--}}
+{{--                        <td class="cart_price">--}}
+{{--                            <p>{{$item['data']['price']}}</p>--}}
+{{--                        </td>--}}
+{{--                        <td class="cart_quantity">--}}
+{{--                            <div class="cart_quantity_button">--}}
+{{--                                <a class="cart_quantity_up" href="{{route('IncreaseSingleProduct',['id' => $item['data']['id']])}}"> + </a>--}}
+{{--                                <input class="cart_quantity_input" type="text" name="quantity" value="{{$item['quantity']}}" autocomplete="off" size="2">--}}
+{{--                                <a class="cart_quantity_down" href="{{route('DecreaseSingleProduct',['id' => $item['data']['id']])}}"> - </a>--}}
+{{--                            </div>--}}
+{{--                        </td>--}}
+{{--                        <td class="cart_total">--}}
+{{--                            <p class="cart_total_price">{{$item['totalSinglePrice']}}</p>--}}
+{{--                        </td>--}}
+{{--                        <td class="cart_delete">--}}
+{{--                            <a class="cart_quantity_delete" href="{{route('DeleteItemFromCart',['id' => $item['data']['id']])}}"><i class="fa fa-times"></i></a>--}}
+{{--                        </td>--}}
                     </tr>
 
                 @endforeach
