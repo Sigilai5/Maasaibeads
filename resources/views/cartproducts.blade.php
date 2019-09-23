@@ -27,12 +27,7 @@
 
 
                 <tr class="cart_menu">
-                    <td class="image">Item</td>
-                    <td class="description">Description</td>
-                    <td class="price">Price</td>
-                    <td class="quantity">Quantity</td>
-                    <td class="total">Total</td>
-                    <td></td>
+
                 </tr>
                 </thead>
                 <tbody>
@@ -180,9 +175,9 @@
             <div class="col-sm-12">
                 <div class="total_area">
                     <ul>
-                        <li>Quantity<span>{{$cartItems->totalQuantity}}</span></li>
+                        <li>Quantity<span>{{$cartItems->totalQuantity}} Items</span></li>
                         <li>Shipping Cost <span>Free</span></li>
-                        <li>Total <span>{{$cartItems->totalPrice}}</span></li>
+                        <li>Total <span>KSH {{$cartItems->totalPrice}}</span></li>
                     </ul>
 {{--                    <a class="btn btn-default update" href="">Update</a>--}}
                     <a class="btn btn-default check_out" href="{{route('checkoutProducts')}}">Check Out</a>
