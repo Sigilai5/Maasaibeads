@@ -73,6 +73,10 @@ Route::get('admin/editProductForm/{id}',['uses'=>'Admin\AdminProductsController@
 //Display edit product image form in admin
 Route::get('admin/editProductImageForm/{id}',['uses'=>'Admin\AdminProductsController@editProductImageForm','as'=>'adminEditProductImageForm'])->middleware('restrictToAdmin');
 
+//display customer
+Route::get('admin/orderCustomer/{id}',['uses'=>'Admin\AdminProductsController@orderCustomer','as'=>'adminOrderCustomer'])->middleware('restrictToAdmin');
+
+
 //update product image
 Route::post('admin/updateProductImage/{id}',['uses'=>'Admin\AdminProductsController@updateProductImage','as'=>'adminUpdateProductImage'])->middleware('restrictToAdmin');
 

@@ -42,6 +42,18 @@ class AdminProductsController extends Controller
 
     }
 
+    //display Customers contacts
+    public function orderCustomer($id){
+        $orders = DB::table('orders')->where("id",$id)->get();
+        return view('admin.orderCustomer',['orders'=>$orders]);
+
+    }
+
+
+
+
+
+
     //create product image
     public function sendCreateProductForm(Request $request){
 
