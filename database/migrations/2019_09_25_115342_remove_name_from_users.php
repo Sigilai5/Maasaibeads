@@ -30,3 +30,5 @@ class RemoveNameFromUsers extends Migration
         });
     }
 }
+
+

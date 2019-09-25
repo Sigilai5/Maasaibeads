@@ -20,7 +20,7 @@
                         @if($user->isAdmin())
                             <a href="{{ route('adminDisplayProducts')}}" class="btn btn-primary">Admin Dashboard</a>
                         @else
-                            <div class="btn btn-primary">You are not an admin</div>
+
 
                         @endif
 
