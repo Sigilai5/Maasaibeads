@@ -43,7 +43,7 @@
                                     <h2>{{$item['data']['name']}}</h2>
                                     <p>{{$item['data']['description']}} - {{$item['data']['type']}}</p>
                                     <p>{{$item['data']['price']}}</p>
-                                    <p class="cart_total_price">{{$item['totalSinglePrice']}}</p>
+                                    <p class="cart_total_price">Total Price:KSH {{$item['totalSinglePrice']}}</p>
                                     <a class="cart_quantity_delete" href="{{route('DeleteItemFromCart',['id' => $item['data']['id']])}}"><i class="fa fa-trash-o"></i></a>
 
 
