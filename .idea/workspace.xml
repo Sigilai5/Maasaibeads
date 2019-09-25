@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a54c7b64-ab43-4872-9bd3-801cfff50db0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cartproducts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cartproducts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_25_092422_add_column_to_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_25_092422_add_column_to_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -197,7 +198,9 @@
       <workItem from="1568628287855" duration="5457000" />
       <workItem from="1568734733096" duration="4287000" />
       <workItem from="1568800324413" duration="3802000" />
-      <workItem from="1569217592480" duration="3426000" />
+      <workItem from="1569217592480" duration="6214000" />
+      <workItem from="1569225491985" duration="935000" />
+      <workItem from="1569407510413" duration="4597000" />
     </task>
     <servers />
   </component>
