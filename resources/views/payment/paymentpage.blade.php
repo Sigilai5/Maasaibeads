@@ -35,27 +35,16 @@
                                 <li>Total: <span>{{$payment_info['price']}}</span></li>
                             </ul>
 
-                            <form
-                                id="eazzycheckout-payment-form"
-                                action=" https://api-test.equitybankgroup.com/v2/checkout/launch" method="POST">
-                                <input type="hidden" id="token" name="token" value="0UbDiQVo8bXnqqAd9Kr5mN3avrPX">
+                      <form action="http://www.scentsbygeraldine.co.ke/pay/2.php" method="post">
 
-                                <input type="hidden" id="amount" name="amount" value="{{$payment_info['price']}}0000.0">
-                                <input type="hidden" id="orderReference" name="orderReference" value="{{$payment_info['order_id']}}">
+                          <input type="text" name="1" value="254{{$payment_info['phone']}}">
+                          <input type="text"  name="2" value="{{$payment_info['price']}}">
+                          <input type="text"  name="3" value="{{$payment_info['order_id']}}" hidden="true">
+                          <input type="text"  name="4" value="{{$payment_info['email']}}">
 
-                                <input type="hidden" id="merchantCode" name="merchantCode" value="5067002602">
-                                <input type="hidden" id="merchant" name="merchant" value="MerchantXYZ">
-                                <input type="hidden" id="currency" name="currency" value="KES">
-                                <input type="hidden" id="custName" name="custName" value="Sigi">
-                                <input type="hidden" id="outletCode" name="outletCode" value="8852175642">
-                                <input type="hidden" id="extraData" name="extraData" value="firsttest">
-                                <input type="hidden" id="popupLogo" name="popupLogo" value="http://mwafrika.co.ke/JENGA/sbg.jpg">
-                                <input type="hidden" id="ez1_callbackurl" name="ez1_callbackurl" value="http://mwafrika.co.ke">
-                                <input type="hidden" id="ez2_callbackurl" name="ez2_callbackurl" value="http://mwafrika.co.ke">
-                                <input type="hidden" id="expiry" name="expiry" value="2025-02-17T19:00:00">
-                                <input type="submit" id="submit-cg" role="button" class="btn btn-primary col-md-4"
-                                       value="Checkout"/>
-                            </form>
+                          <button type="submit"></button>
+
+                      </form>
 
 {{--                            <a class="btn btn-default update" href="">Pay with Mpesa</a>--}}
                             <a class="btn btn-default check_out" id="paypal-button-container"></a>

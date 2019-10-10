@@ -37,15 +37,14 @@
                                         {{csrf_field()}}
 
 
-                                        <input type="text" name="email" placeholder="Email*" required>
-                                        <input type="text" name="first_name" placeholder="First Name *" required>
-                                        <input type="text" name="middle_name" placeholder="Middle Name" >
-                                        <input type="text" name="last_name" placeholder="Last Name *"  required>
-                                        <input type="text" name="address" placeholder="Address 1 *" required>
-
-                                        <input type="text" name="zip" placeholder="Zip / Postal Code *" required>
-
+                                        <input type="text" name="name" placeholder="Name *" value="{!! Auth::user()->name !!}" required>
+                                        <input type="text" name="email" placeholder="Email*" value="{!! Auth::user()->email !!}" required>
                                         <input type="text" name="phone" placeholder="Phone *" required>
+
+                                        </textarea>
+
+                                        <textarea name="address">Shipping Address</textarea>
+
                                         <button class="btn btn-default check_out" type="submit" name="submit" >Proceed To Payment</button>
 
                                     </form>

@@ -151,10 +151,8 @@ class ProductsController extends Controller
 
         $cart = Session::get('cart');
 
-        $first_name = $request->input('first_name');
+        $name = $request->input('name');
         $address = $request->input('address');
-        $last_name = $request->input('last_name');
-        $zip = $request->input('zip');
         $phone = $request->input('phone');
         $email = $request->input('email');
 
@@ -174,7 +172,7 @@ class ProductsController extends Controller
         if($cart){
             $date = date('Y-m-d H:i:s');
             $newOrderArray = array("user_id"=>$user_id,'status'=>"on_hold","date"=>$date,"delivery_date"=>$date,"price"=>$cart->totalPrice,
-                "first_name"=>$first_name,"address"=>$address,"last_name"=>$last_name,"zip"=>$zip,"email"=>$email,"phone"=>$phone);
+                "name"=>$name,"address"=>$address,"email"=>$email,"phone"=>$phone);
 
             $create_oder = DB::table('orders')->insert($newOrderArray); //INSERT TO 'orders' TABLE
             $order_id = DB::getPdo()->lastInsertId(); //get id of of the order

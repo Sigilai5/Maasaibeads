@@ -24,6 +24,11 @@ class PaymentsController extends Controller
 
         //has not paid
         if ($payment_info['status'] == 'on_hold') {
+
+            /* iPay*/
+
+
+
             return view('payment.paymentpage', ['payment_info' => $payment_info])->with(compact('title'));
         } else {
 

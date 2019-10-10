@@ -11,7 +11,9 @@
 |
 */
 
+use App\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\View;
 
 Route::get('/',['uses'=>'ProductsController@index','as'=>'allProducts']);
@@ -123,4 +125,5 @@ Route::get('/testStorage',function (){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 
