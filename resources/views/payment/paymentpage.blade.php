@@ -37,17 +37,17 @@
 
                       <form action="http://www.scentsbygeraldine.co.ke/pay/2.php" method="post">
 
-                          <input type="text" name="1" value="254{{$payment_info['phone']}}">
-                          <input type="text"  name="2" value="{{$payment_info['price']}}">
-                          <input type="text"  name="3" value="{{$payment_info['order_id']}}" hidden="true">
-                          <input type="text"  name="4" value="{{$payment_info['email']}}">
+                          <input type="text" hidden name="1" value="254{{$payment_info['phone']}}">
+                          <input type="text" hidden name="2" value="{{$payment_info['price']}}">
+                          <input type="text" hidden name="3" value="{{$payment_info['order_id']}}" hidden="true">
+                          <input type="text" hidden name="4" value="{{$payment_info['email']}}">
 
-                          <button type="submit"></button>
+                          <button class="btn btn-default check_out" type="submit" name="submit" >Proceed To Payment</button>
 
                       </form>
 
 {{--                            <a class="btn btn-default update" href="">Pay with Mpesa</a>--}}
-                            <a class="btn btn-default check_out" id="paypal-button-container"></a>
+{{--                            <a class="btn btn-default check_out" id="paypal-button-container"></a>--}}
                         </div>
                     </div>
 
