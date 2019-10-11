@@ -89,7 +89,7 @@
 {{--                            <li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>--}}
 {{--                            <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>--}}
                             <li><a href="{{route('cartProducts')}}"><i class="fa fa-shopping-cart"></i>
-                                    @if(Auth::check())
+
                                     <span class="cart-with-numbers">
 
                                         @if(Session::has('cart'))
@@ -97,9 +97,11 @@
                                             @endif
 
                                     </span>
-                                    @else
 
-                                    @endif
+
+
+
+
                                     Cart</a></li>
 
                             @if(Auth::check())
