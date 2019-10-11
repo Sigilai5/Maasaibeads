@@ -1,19 +1,19 @@
 @extends('layouts.admin')
 
 @section('body')
-{{--        $userData->admin_level == 1--Alternative to Auth::user()->admin_level == 1}}
-    @if(Auth::user()->admin_level == 1)
-    <div class="table-responsive">
+{{--       $userData->admin_level == 1--Alternative to Auth::user()->admin_level == 1}}--}}
+{{--    @if(Auth::user()->admin_level == 1)--}}
+{{--    <div class="table-responsive">--}}
 
-        @if ($errors->any())
-            <div class="alert alert-danger">
-                <ul>
+{{--        @if ($errors->any())--}}
+{{--            <div class="alert alert-danger">--}}
+{{--                <ul>--}}
 
-                    <li>{!! print_r($errors->all()) !!}</li>
+{{--                    <li>{!! print_r($errors->all()) !!}</li>--}}
 
-                </ul>
-            </div>
-        @endif
+{{--                </ul>--}}
+{{--            </div>--}}
+{{--        @endif--}}
 
 
 
@@ -36,9 +36,9 @@
 
     </div>
 
-    @else
-        <div class="alert alert-danger" role="alert">
-            <strong>Please!</strong> Only level one admin can edit this page
-        </div>
-    @endif
+{{--    @else--}}
+{{--        <div class="alert alert-danger" role="alert">--}}
+{{--            <strong>Please!</strong> Only level one admin can edit this page--}}
+{{--        </div>--}}
+{{--    @endif--}}
 @endsection
