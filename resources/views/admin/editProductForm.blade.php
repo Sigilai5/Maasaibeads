@@ -2,7 +2,7 @@
 
 @section('body')
 
-@if(Auth::user()->admin_level == 1)
+{{--@if(Auth::user()->admin_level == 1)--}}
     <div class="table-responsive">
 
         <form action="/admin/updateProduct/{{$product->id}}" method="post">
@@ -32,10 +32,10 @@
         </form>
 
     </div>
-@else
+{{--@else--}}
     <div class="alert alert-danger" role="alert">
         <strong>Please!</strong> Only level one admin can edit this page
     </div>
-@endif
+{{--@endif--}}
 
 @endsection
