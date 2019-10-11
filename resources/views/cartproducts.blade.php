@@ -11,7 +11,7 @@
         </div><br \>
     @endif
 
-<section id="cart_items">
+<section id="cart_items" >
     <div class="container">
         <div class="breadcrumbs">
             <ol class="breadcrumb">
@@ -34,12 +34,12 @@
 
                 @foreach($cartItems->items as $item)
 
-                    <tr width="400px">
+                    <tr width="40px">
 
-                        <div class="product-image-wrapper">
-                            <div class="single-products">
+                        <div class="product-image-wrapper" width="5%" height="5%">
+                            <div class="single-products" >
                                 <div class="productinfo text-center">
-                                    <img src="{{Storage::disk('local')->url('product_images/'.$item['data']['image'])}}" alt="" width="0.2" height="500"/>
+                                    <img src="{{Storage::disk('local')->url('product_images/'.$item['data']['image'])}}" alt="" />
                                     <h2>{{$item['data']['name']}}</h2>
                                     <p>{{$item['data']['description']}} - {{$item['data']['type']}}</p>
                                     <p>{{$item['data']['price']}}</p>

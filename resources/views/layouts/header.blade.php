@@ -31,7 +31,7 @@
                 <div class="col-sm-6">
                     <div class="contactinfo">
                         <ul class="nav nav-pills">
-                            <li><a href="#"><i class="fa fa-phone"></i> +254769133875</a></li>
+                            <li><a href="#"><i class="fa fa-phone"></i> +254703808145</a></li>
                             <li><a href="#"><i class="fa fa-envelope"></i> scentsbygeraldine@gmail.com</a></li>
                         </ul>
                     </div>
