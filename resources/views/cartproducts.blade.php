@@ -36,10 +36,10 @@
 
                     <tr width="40px">
 
-                        <div class="product-image-wrapper" width="5%" height="5%">
-                            <div class="single-products" >
+                        <div class="product-image-wrapper" >
+                            <div class="single-products" style="border: none;">
                                 <div class="productinfo text-center">
-                                    <img src="{{Storage::disk('local')->url('product_images/'.$item['data']['image'])}}" alt="" />
+                                    <img src="{{Storage::disk('local')->url('product_images/'.$item['data']['image'])}}" alt="" style="width: 48rem;" />
                                     <h2>{{$item['data']['name']}}</h2>
                                     <p>{{$item['data']['description']}} - {{$item['data']['type']}}</p>
                                     <p>{{$item['data']['price']}}</p>
