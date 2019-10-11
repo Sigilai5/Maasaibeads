@@ -84,7 +84,7 @@
                 <tr>
                     <td>{{$order->id}}</td>
 
-                    <td>{{$order->first_name}} {{$order->last_name}}</td>
+                    <td>{{$order->name}}</td>
                     <td>{{$order->phone}} </td>
                     <td>{{$order->email}}</td>
                     <td>{{$order->address}}</td>
