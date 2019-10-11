@@ -157,7 +157,7 @@
 
 
                 <div class="alert alert-danger" role="alert">
-                    <strong>Please!</strong> <a href="{{route('login') }}">Log in</a> in order to create an order
+                    <strong>Please!</strong> <a href="{{route('register') }}">Register</a> in order to create an order
                 </div>
 
 
