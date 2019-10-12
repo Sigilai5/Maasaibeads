@@ -72,6 +72,7 @@ class ProductsController extends Controller
     }
 
 
+
     public function showCart(){
 
        $cart = Session::get('cart');
@@ -79,6 +80,8 @@ class ProductsController extends Controller
        //if there is an item in the cart
         $title = 'Cart';
        if($cart){
+
+           $cart->shippingCost();
 
             return view('cartproducts',['cartItems'=>$cart])->with(compact('title'));
 
@@ -132,6 +135,7 @@ class ProductsController extends Controller
             $price = (int) str_replace("$","",$product['price']);
             $cart->items[$id]['quantity'] = $cart->items[$id]['quantity']-1;
             $cart->items[$id]['totalSinglePrice'] = $cart->items[$id]['quantity'] * $price ;
+
             $cart->updatePriceAndQuantity();
 
             $request->session()->put('cart',$cart);

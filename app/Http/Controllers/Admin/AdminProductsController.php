@@ -42,7 +42,7 @@ class AdminProductsController extends Controller
 
     }
 
-    //display Customers contacts
+    //display Customer info
     public function orderCustomer($id){
         $orders = DB::table('orders')->where("id",$id)->get();
         return view('admin.orderCustomer',['orders'=>$orders]);
@@ -50,7 +50,15 @@ class AdminProductsController extends Controller
     }
 
 
+    //display order info
+    public function orderItem($id){
+        $order_items = DB::table('order_items')->where("order_id",$id)->get();
 
+
+
+        return view('admin.orderItem',['order_items'=>$order_items]);
+
+    }
 
 
 

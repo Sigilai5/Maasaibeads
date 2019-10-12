@@ -71,37 +71,38 @@
             <thead>
             <tr>
                 <th>#order_id</th>
-                <th>Name</th>
-                <th>Phone Number</th>
-                <th>Email</th>
-                <th>Address</th>
-                <th>Order Date</th>
+
                 <th>Item</th>
+
+{{--                @foreach($products as $product)--}}
+
+{{--                    {{$product->name}}--}}
+
+{{--                    @endforeach--}}
+
+
             </tr>
             </thead>
             <tbody>
 
-            @foreach($orders as $order)
+            @foreach($order_items as $order_item)
                 <tr>
-                    <td>{{$order->id}}</td>
+                    <td>{{$order_item->order_id}}</td>
 
-                    <td>{{$order->name}}</td>
-                    <td>{{$order->phone}} </td>
-                    <td>{{$order->email}}</td>
-                    <td>{{$order->address}}</td>
-                    <td>{{$order->delivery_date}}</td>
-                    <td><a href="/admin/orderItem/{{$order->id}}"><button type="button" class="btn btn-primary">Item</button></a></td>
+                    <td>{{$order_item->item_name}}</td>
+
+{{--                    <td><button type="button" class="btn btn-primary">Item</button></td>--}}
 
 
 
 
-{{--                    <td><a class="payment-info-button btn btn-success" href="{{ route('paymentInfo',['order_id'=> $order->id] )}}">Payment info </a></td>--}}
+                    {{--                    <td><a class="payment-info-button btn btn-success" href="{{ route('paymentInfo',['order_id'=> $order->id] )}}">Payment info </a></td>--}}
 
 
-{{--                    <td><a href="{{ route('adminEditOrderForm',['order_id'=> $order->id] )}}" class="btn btn-primary">Edit</a></td>--}}
+                    {{--                    <td><a href="{{ route('adminEditOrderForm',['order_id'=> $order->id] )}}" class="btn btn-primary">Edit</a></td>--}}
 
-{{--                    <td><a href="{{ route('adminDeleteOrder',['id' => $order->id ])}}" onclick="return confirm('Are you sure you want to delete this order?')"--}}
-{{--                           class="btn btn-warning">Remove</a></td>--}}
+                    {{--                    <td><a href="{{ route('adminDeleteOrder',['id' => $order->id ])}}" onclick="return confirm('Are you sure you want to delete this order?')"--}}
+                    {{--                           class="btn btn-warning">Remove</a></td>--}}
 
 
                 </tr>
@@ -140,7 +141,7 @@
 
 
 
-{{--        {{$orders->links()}}--}}
+        {{--        {{$orders->links()}}--}}
 
     </div>
 

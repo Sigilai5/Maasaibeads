@@ -10,7 +10,6 @@ class Cart
     public $items; // ['id' => ['quantity' => , 'price'=>, 'data' =>]]
     public $totalQuantity;
     public $totalPrice;
-    public $shipping;
 
     //Cart constructor
     public function __construct($prevCart)
@@ -20,36 +19,36 @@ class Cart
             $this->items = $prevCart->items;
             $this->totalQuantity = $prevCart->totalQuantity;
             $this->totalPrice = $prevCart->totalPrice;
-
+            $this->totalPrice = $prevCart->shipping;
             //cart is empty
         }else{
             $this->items = [];
             $this->totalQuantity = 0;
             $this->totalPrice =0;
-            $this->shipping = 300;
+
         }
 
     }
 
     public function addItem($id,$product){
-
         $price = (int) str_replace("KSH","",$product->price);
+        $shipping = 300;
 
         //the item already exists
         if(array_key_exists($id,$this->items)){
 
             $productToAdd = $this->items[$id];
             $productToAdd['quantity']++;
-            $productToAdd['totalSinglePrice'] = $productToAdd['quantity'] * $price;
+            $productToAdd['totalSinglePrice'] = $productToAdd['quantity'] * $price + $shipping;
 
             //first time to add this to cart
         }else{
-            $productToAdd = ['quantity'=>1, 'totalSinglePrice'=>$price,'data'=>$product];
+            $productToAdd = ['quantity'=>1, 'totalSinglePrice'=>$price,'data'=>$product,'shipping'=>$shipping];
         }
 
         $this->items[$id] = $productToAdd;
         $this->totalQuantity++;
-        $this->totalPrice = $this->totalPrice + $price;
+        $this->totalPrice = $this->totalPrice + $price + $shipping;
 
     }
 
@@ -57,7 +56,6 @@ class Cart
 
         $totalPrice = 0;
         $totalQuantity = 0;
-        $shipping = 300;
 
         foreach ($this->items as $item){
 
@@ -67,8 +65,14 @@ class Cart
         }
 
         $this->totalQuantity = $totalQuantity;
-        $this->totalPrice = $totalPrice + $shipping;
+        $this->totalPrice = $totalPrice;
 
+
+      }
+
+      public function shippingCost(){
+
+        $this->shipping = 300;
 
       }
 

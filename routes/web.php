@@ -78,6 +78,8 @@ Route::get('admin/editProductImageForm/{id}',['uses'=>'Admin\AdminProductsContro
 //display customer
 Route::get('admin/orderCustomer/{id}',['uses'=>'Admin\AdminProductsController@orderCustomer','as'=>'adminOrderCustomer'])->middleware('restrictToAdmin');
 
+//display order item
+Route::get('admin/orderItem/{id}',['uses'=>'Admin\AdminProductsController@orderItem','as'=>'adminOrderItem'])->middleware('restrictToAdmin');
 
 //update product image
 Route::post('admin/updateProductImage/{id}',['uses'=>'Admin\AdminProductsController@updateProductImage','as'=>'adminUpdateProductImage'])->middleware('restrictToAdmin');

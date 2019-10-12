@@ -32,7 +32,7 @@
                                 </li>
                                 <li>Shipping Cost: <span>Free</span></li>
                                 <li>ORDER ID: <span>{{$payment_info['order_id']}}</span></li>
-                                <li>Total: <span>{{$payment_info['price']}}</span></li>
+                                <li>Total: <span>{{$payment_info['price'] + 300}}</span></li>
                             </ul>
 
                       <form action="https://www.scentsbygeraldine.co.ke/pay/2.php" method="post">
