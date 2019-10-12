@@ -32,7 +32,7 @@ class Cart
     }
 
     public function addItem($id,$product){
-        $shipping = 300;
+
         $price = (int) str_replace("KSH","",$product->price);
 
         //the item already exists
@@ -49,7 +49,7 @@ class Cart
 
         $this->items[$id] = $productToAdd;
         $this->totalQuantity++;
-        $this->totalPrice = $this->totalPrice + $price + $shipping;
+        $this->totalPrice = $this->totalPrice + $price;
 
     }
 
@@ -57,7 +57,7 @@ class Cart
 
         $totalPrice = 0;
         $totalQuantity = 0;
-
+        $shipping = 300;
 
         foreach ($this->items as $item){
 
@@ -67,7 +67,7 @@ class Cart
         }
 
         $this->totalQuantity = $totalQuantity;
-        $this->totalPrice = $totalPrice;
+        $this->totalPrice = $totalPrice + $shipping;
 
 
       }
