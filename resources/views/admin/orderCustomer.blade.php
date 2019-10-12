@@ -76,6 +76,7 @@
                 <th>Email</th>
                 <th>Address</th>
                 <th>Order Date</th>
+                <th>Item</th>
             </tr>
             </thead>
             <tbody>
@@ -89,6 +90,7 @@
                     <td>{{$order->email}}</td>
                     <td>{{$order->address}}</td>
                     <td>{{$order->delivery_date}}</td>
+                    <td><button type="button" class="btn btn-primary">Item</button></td>
 
 
 

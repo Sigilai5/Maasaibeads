@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a54c7b64-ab43-4872-9bd3-801cfff50db0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/orderCustomer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/orderCustomer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/checkoutproducts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/checkoutproducts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +27,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/database/migrations" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -215,7 +216,7 @@
       <workItem from="1570697305725" duration="1795000" />
       <workItem from="1570700540496" duration="9948000" />
       <workItem from="1570793231107" duration="529000" />
-      <workItem from="1570794381397" duration="13398000" />
+      <workItem from="1570794381397" duration="16440000" />
     </task>
     <servers />
   </component>

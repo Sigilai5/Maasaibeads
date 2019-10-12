@@ -15,7 +15,7 @@
                     @endif
                         <p> Name: {!! Auth::user()->name !!}</p>
                         <p>Email: {!! Auth::user()->email !!}</p>
-                        <a href="{{ route('allProducts')}}"  class="btn btn-warning">Main Website</a>
+                        <a href="{{ route('cartProducts')}}"  class="btn btn-warning">Proceed</a>
 
                         @if($user->isAdmin())
                             <a href="{{ route('adminDisplayProducts')}}" class="btn btn-primary">Admin Dashboard</a>

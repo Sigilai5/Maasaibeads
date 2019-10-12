@@ -39,7 +39,7 @@
 
                                         <input type="text" name="name" placeholder="Name *" value="{!! Auth::user()->name !!}" required>
                                         <input type="text" name="email" placeholder="Email*" value="{!! Auth::user()->email !!}" required>
-                                        <input type="text" name="phone" placeholder="Phone *" required>
+                                        <input type="tel" name="phone" placeholder="Phone Number *" required>
 
                                         </textarea>
 
