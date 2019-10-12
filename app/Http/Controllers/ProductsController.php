@@ -79,6 +79,7 @@ class ProductsController extends Controller
        //if there is an item in the cart
         $title = 'Cart';
        if($cart){
+
             return view('cartproducts',['cartItems'=>$cart])->with(compact('title'));
 
        }

@@ -10,6 +10,7 @@ class Cart
     public $items; // ['id' => ['quantity' => , 'price'=>, 'data' =>]]
     public $totalQuantity;
     public $totalPrice;
+    public $shipping;
 
     //Cart constructor
     public function __construct($prevCart)
@@ -25,12 +26,13 @@ class Cart
             $this->items = [];
             $this->totalQuantity = 0;
             $this->totalPrice =0;
+            $this->shipping = 300;
         }
 
     }
 
     public function addItem($id,$product){
-
+        $shipping = 300;
         $price = (int) str_replace("KSH","",$product->price);
 
         //the item already exists
@@ -47,7 +49,7 @@ class Cart
 
         $this->items[$id] = $productToAdd;
         $this->totalQuantity++;
-        $this->totalPrice = $this->totalPrice + $price;
+        $this->totalPrice = $this->totalPrice + $price + $shipping;
 
     }
 

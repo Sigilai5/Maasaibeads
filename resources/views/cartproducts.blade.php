@@ -176,7 +176,7 @@
                 <div class="total_area">
                     <ul>
                         <li>Quantity<span>{{$cartItems->totalQuantity}} Items</span></li>
-                        <li>Shipping Cost <span>Free</span></li>
+                        <li>Shipping Cost within Nairobi <span>300</span></li>
                         <li>Total <span>KSH {{$cartItems->totalPrice}}</span></li>
                     </ul>
 {{--                    <a class="btn btn-default update" href="">Update</a>--}}
