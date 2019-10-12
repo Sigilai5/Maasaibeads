@@ -30,7 +30,7 @@
                                     @endif
 
                                 </li>
-                                <li>Shipping Cost: <span>Free</span></li>
+                                <li>Shipping Cost:<b>Only for Nairobi Residents<b> <span>300</span></li>
                                 <li>ORDER ID: <span>{{$payment_info['order_id']}}</span></li>
                                 <li>Total: <span>{{$payment_info['price'] + 300}}</span></li>
                             </ul>
@@ -38,7 +38,7 @@
                       <form action="https://www.scentsbygeraldine.co.ke/pay/2.php" method="post">
 
                           <input type="text" hidden name="1" value="254{{$payment_info['phone']}}">
-                          <input type="text" hidden name="2" value="{{$payment_info['price']}}">
+                          <input type="text" hidden name="2" value="{{$payment_info['price'] + $shipping}}">
                           <input type="text" hidden name="3" value="{{$payment_info['order_id']}}" hidden="true">
                           <input type="text" hidden name="4" value="{{$payment_info['email']}}">
 

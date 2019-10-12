@@ -26,10 +26,10 @@ class PaymentsController extends Controller
         if ($payment_info['status'] == 'on_hold') {
 
             /* iPay*/
+            $shipping = 300;
 
 
-
-            return view('payment.paymentpage', ['payment_info' => $payment_info])->with(compact('title'));
+            return view('payment.paymentpage', ['payment_info' => $payment_info,'shipping'=>$shipping])->with(compact('title'));
         } else {
 
             return redirect()->route('allProducts')->with(compact('title'));

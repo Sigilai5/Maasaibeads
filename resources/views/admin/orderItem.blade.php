@@ -74,6 +74,9 @@
 
                 <th>Item</th>
 
+                <th>Price</th>
+
+                <th>Quantity</th>
 {{--                @foreach($products as $product)--}}
 
 {{--                    {{$product->name}}--}}
@@ -90,6 +93,10 @@
                     <td>{{$order_item->order_id}}</td>
 
                     <td>{{$order_item->item_name}}</td>
+
+                    <td>{{$order_item->item_price}}</td>
+
+                    <td>{{$order_item->quantity}}</td>
 
 {{--                    <td><button type="button" class="btn btn-primary">Item</button></td>--}}
 

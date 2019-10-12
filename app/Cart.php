@@ -19,7 +19,6 @@ class Cart
             $this->items = $prevCart->items;
             $this->totalQuantity = $prevCart->totalQuantity;
             $this->totalPrice = $prevCart->totalPrice;
-            $this->totalPrice = $prevCart->shipping;
             //cart is empty
         }else{
             $this->items = [];
@@ -32,23 +31,22 @@ class Cart
 
     public function addItem($id,$product){
         $price = (int) str_replace("KSH","",$product->price);
-        $shipping = 300;
 
         //the item already exists
         if(array_key_exists($id,$this->items)){
 
             $productToAdd = $this->items[$id];
             $productToAdd['quantity']++;
-            $productToAdd['totalSinglePrice'] = $productToAdd['quantity'] * $price + $shipping;
+            $productToAdd['totalSinglePrice'] = $productToAdd['quantity'] * $price;
 
             //first time to add this to cart
         }else{
-            $productToAdd = ['quantity'=>1, 'totalSinglePrice'=>$price,'data'=>$product,'shipping'=>$shipping];
+            $productToAdd = ['quantity'=>1, 'totalSinglePrice'=>$price,'data'=>$product];
         }
 
         $this->items[$id] = $productToAdd;
         $this->totalQuantity++;
-        $this->totalPrice = $this->totalPrice + $price + $shipping;
+        $this->totalPrice = $this->totalPrice + $price;
 
     }
 
@@ -70,11 +68,7 @@ class Cart
 
       }
 
-      public function shippingCost(){
 
-        $this->shipping = 300;
-
-      }
 
 
 }

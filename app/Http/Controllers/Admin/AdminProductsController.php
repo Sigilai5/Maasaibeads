@@ -55,7 +55,6 @@ class AdminProductsController extends Controller
         $order_items = DB::table('order_items')->where("order_id",$id)->get();
 
 
-
         return view('admin.orderItem',['order_items'=>$order_items]);
 
     }

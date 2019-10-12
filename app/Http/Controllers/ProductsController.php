@@ -81,8 +81,6 @@ class ProductsController extends Controller
         $title = 'Cart';
        if($cart){
 
-           $cart->shippingCost();
-
             return view('cartproducts',['cartItems'=>$cart])->with(compact('title'));
 
        }
@@ -132,7 +130,7 @@ class ProductsController extends Controller
 
         if($cart->items[$id]['quantity'] > 1){
             $product = Product::find($id);
-            $price = (int) str_replace("$","",$product['price']);
+            $price = (int) str_replace("KSH","",$product['price']);
             $cart->items[$id]['quantity'] = $cart->items[$id]['quantity']-1;
             $cart->items[$id]['totalSinglePrice'] = $cart->items[$id]['quantity'] * $price ;
 
@@ -185,11 +183,15 @@ class ProductsController extends Controller
             foreach ($cart->items as $cart_item){
                 $item_id = $cart_item['data']['id'];
                 $item_name = $cart_item['data']['name'];
-                $item_price = $price = (int) str_replace("$","",$cart_item['data']['price']);
-                $newItemsInCurrentOrder = array('item_id'=>$item_id,'order_id'=>$order_id,'item_name'=>$item_name,'item_price'=>$item_price);
+                $quantity =$cart_item['quantity'];
+                $item_price = $price = (int) str_replace("KSH","",$cart_item['data']['price']);
+                $newItemsInCurrentOrder = array('item_id'=>$item_id,'order_id'=>$order_id,'item_name'=>$item_name,'item_price'=>$item_price,'quantity'=>$quantity);
                 $created_order_items = DB::table('order_items')->insert($newItemsInCurrentOrder);
 
+
             }
+
+
 
             //delete  cart session
             Session()->forget("cart");
@@ -198,6 +200,7 @@ class ProductsController extends Controller
             $payment_info['order_id'] = $order_id;
             $request->session()->put('payment_info',$payment_info); //PREVENT USER FROM PAYING TWICE
             $title = 'Payment Page';
+
 
             return redirect()->route("showPaymentPage")->with(compact('title'));
 
@@ -224,7 +227,7 @@ class ProductsController extends Controller
             foreach ($cart->items as $cart_item){
                 $item_id = $cart_item['data']['id'];
                 $item_name = $cart_item['data']['name'];
-                $item_price = $price = (int) str_replace("$","",$cart_item['data']['price']);
+                $item_price = $price = (int) str_replace("KSH","",$cart_item['data']['price']);
                 $newItemsInCurrentOrder = array('item_id'=>$item_id,'order_id'=>$order_id,'item_name'=>$item_name,'item_price'=>$item_price);
                 $created_order_items = DB::table('order_items')->insert($newItemsInCurrentOrder);
 
