@@ -31,7 +31,7 @@
 
             <div class="form-group">
                 <label for="type">Category</label>
-                <input type="text" class="form-control" name="price" id="price" placeholder="price" value="{{$category}}" required>
+                <input type="text" class="form-control" name="category" id="category" placeholder="Category" value="{{$product->category}}" required>
             </div>
 
             <button type="submit" name="submit" class="btn btn-default">Submit</button>

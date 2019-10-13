@@ -140,8 +140,9 @@ class AdminProductsController extends Controller
         $type = $request->input('type');
         $price = $request->input('price');
         $priceInInt = (float) $price;
+        $category = $request->input('category');
 
-        $updateArray = array("name"=>$name,"description"=>$description,"type"=>$type,"price"=>$priceInInt);
+        $updateArray = array("name"=>$name,"description"=>$description,"type"=>$type,"price"=>$priceInInt,"category"=>$category);
 
         DB::table('products')->where('id',$id)->update($updateArray);
 

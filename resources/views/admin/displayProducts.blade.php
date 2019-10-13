@@ -18,6 +18,7 @@
                 <th>Description</th>
                 <th>Type</th>
                 <th>Price</th>
+                <th>Category</th>
                 <th>Edit Image</th>
                 <th>Edit</th>
                 <th>Remove</th>
@@ -35,6 +36,7 @@
                     <td>{{$product['description']}}</td>
                     <td>{{$product['type']}}</td>
                     <td>{{$product['price']}}</td>
+                    <td>{{$product['category']}}</td>
 
 
 
