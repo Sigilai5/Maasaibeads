@@ -43,7 +43,7 @@
 
                                         </textarea>
 
-                                        <textarea name="address" required></textarea>
+                                        <textarea name="address" placeholder="Enter Shipping Location e.g Maruti Heights,Langata Link Road 6th Floor Room 8" required></textarea>
 
                                         <button class="btn btn-default check_out" type="submit" name="submit" >Proceed To Payment</button>
 
