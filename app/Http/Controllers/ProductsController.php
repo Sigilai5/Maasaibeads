@@ -39,6 +39,20 @@ class ProductsController extends Controller
         return view('womenProducts')->with(compact('products'))->with(compact('title'));
     }
 
+    public function perfumesProducts(){
+
+        $products = DB::table('products')->where('category', 'perfumes')->get();
+        $title = 'Perfumes';
+        return view('perfumesProducts')->with(compact('products'))->with(compact('title'));
+    }
+
+    public function jewelleryProducts(){
+
+        $products = DB::table('products')->where('category', 'beads')->get();
+        $title = 'Jewellery';
+        return view('jewelleryProducts')->with(compact('products'))->with(compact('title'));
+    }
+
     public function searchProducts(Request $request){
 
         $searchText = $request->get('searchText');

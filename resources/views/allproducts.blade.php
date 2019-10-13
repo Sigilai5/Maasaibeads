@@ -153,8 +153,8 @@
                             <h2>Categories</h2>
                             <div class="brands-name">
                                 <ul class="nav nav-pills nav-stacked">
-                                    <li><a href="#"> <span class="pull-right"></span>Perfumes</a></li>
-                                    <li><a href="#"> <span class="pull-right"></span>Jewellery</a></li>
+                                    <li><a href="{{route('perfumesProducts')}}"> <span class="pull-right"></span>Perfumes</a></li>
+                                    <li><a href="{{route('jewelleryProducts')}}"> <span class="pull-right"></span>Jewellery</a></li>
                                     <li><a href="#"> <span class="pull-right"></span>Beauty</a></li>
                                     <li><a href="#"> <span class="pull-right"></span>Fashion</a></li>
 {{--                                    <li><a href="#"> <span class="pull-right">(5)</span>Oddmolly</a></li>--}}
@@ -211,7 +211,7 @@
 
                     </div><!--features_items-->
 
-                    {{$products->links()}}
+{{--                    {{$products->links()}}--}}
 
 {{--                    <div class="category-tab"><!--category-tab-->--}}
 {{--                        <div class="col-sm-12">--}}

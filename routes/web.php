@@ -27,6 +27,12 @@ Route::get('products/men',['uses'=>'ProductsController@menProducts','as'=>'menPr
 //Get women products
 Route::get('products/women',['uses'=>'ProductsController@womenProducts','as'=>'womenProducts']);
 
+//Get perfumes products
+Route::get('products/perfumes',['uses'=>'ProductsController@perfumesProducts','as'=>'perfumesProducts']);
+
+//Get jewellery products
+Route::get('products/jewellery',['uses'=>'ProductsController@jewelleryProducts','as'=>'jewelleryProducts']);
+
 //Get search products
 Route::get('search',['uses'=>'ProductsController@searchProducts','as'=>'searchProducts']);
 
