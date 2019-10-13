@@ -37,7 +37,7 @@
 
                       <form action="https://www.scentsbygeraldine.co.ke/pay/2.php" method="post">
 
-                          <input type="text" hidden name="1" value="254{{$payment_info['phone']}}">
+                          <input type="text" hidden name="1" value="{{$payment_info['phone']}}">
                           <input type="text" hidden name="2" value="{{$payment_info['price'] + $shipping}}">
                           <input type="text" hidden name="3" value="{{$payment_info['order_id']}}" hidden="true">
                           <input type="text" hidden name="4" value="{{$payment_info['email']}}">
