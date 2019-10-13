@@ -43,7 +43,7 @@
 
                                         </textarea>
 
-                                        <textarea name="address">Shipping Address</textarea>
+                                        <textarea name="address" required></textarea>
 
                                         <button class="btn btn-default check_out" type="submit" name="submit" >Proceed To Payment</button>
 
