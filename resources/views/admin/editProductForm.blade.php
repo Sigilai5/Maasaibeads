@@ -28,6 +28,12 @@
                 <label for="type">Price</label>
                 <input type="text" class="form-control" name="price" id="price" placeholder="price" value="{{$product_price}}" required>
             </div>
+
+            <div class="form-group">
+                <label for="type">Category</label>
+                <input type="text" class="form-control" name="price" id="price" placeholder="price" value="{{$category}}" required>
+            </div>
+
             <button type="submit" name="submit" class="btn btn-default">Submit</button>
         </form>
 
