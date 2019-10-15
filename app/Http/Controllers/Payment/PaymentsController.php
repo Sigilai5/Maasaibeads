@@ -33,7 +33,7 @@ class PaymentsController extends Controller
             $fields = array("live"=> "1",
                 "oid"=> $payment_info['order_id'],
                 "inv"=> "112020102292999",
-                "ttl"=> $total_cost ,
+                "ttl"=> "3", //$total_cost
                 "tel"=> $payment_info['phone'],
                 "eml"=> $payment_info['email'],
                 "vid"=> "mbeads",
@@ -42,7 +42,7 @@ class PaymentsController extends Controller
                 "p2"=> "020102292999",
                 "p3"=> "maasaibeads",
                 "p4"=> "900",
-                "cbk"=> "http://maasaibeads.com/",
+                "cbk"=> "http://maasaibeads.com/test",
                 "cst"=> "1",
                 "crl"=> "0"
             );
