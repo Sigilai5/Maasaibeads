@@ -27,9 +27,37 @@ class PaymentsController extends Controller
 
             /* iPay*/
             $shipping = 300;
+            $total_cost = $payment_info['price'] + $shipping;
+
+            //Data needed by iPay a fair share of it obtained from the user from a form e.g email, number etc...
+            $fields = array("live"=> "1",
+                "oid"=> $payment_info['order_id'],
+                "inv"=> "112020102292999",
+                "ttl"=> $total_cost ,
+                "tel"=> $payment_info['phone'],
+                "eml"=> $payment_info['email'],
+                "vid"=> "mbeads",
+                "curr"=> "KES",
+                "p1"=> "airtel",
+                "p2"=> "020102292999",
+                "p3"=> "maasaibeads",
+                "p4"=> "900",
+                "cbk"=> "http://maasaibeads.com/",
+                "cst"=> "1",
+                "crl"=> "0"
+            );
+
+            $datastring =  $fields['live'].$fields['oid'].$fields['inv'].$fields['ttl'].$fields['tel'].$fields['eml'].$fields['vid'].$fields['curr'].$fields['p1'].$fields['p2'].$fields['p3'].$fields['p4'].$fields['cbk'].$fields['cst'].$fields['crl'];
+            $hashkey ="8fdl0vjofspd23m";//use "demo" for testing where vid also is set to "demo"
+
+            /********************************************************************************************************
+             * Generating the HashString sample
+             */
+            $generated_hash = hash_hmac('sha1',$datastring , $hashkey);
 
 
-            return view('payment.paymentpage', ['payment_info' => $payment_info,'shipping'=>$shipping])->with(compact('title'));
+
+            return view('payment.paymentpage', ['payment_info' => $payment_info,'shipping'=>$shipping,'generated_hash'=>$generated_hash,'some_data'=>$fields])->with(compact('title'));
         } else {
 
             return redirect()->route('allProducts')->with(compact('title'));

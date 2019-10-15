@@ -88,6 +88,8 @@
             </thead>
             <tbody>
 
+
+
             @foreach($order_items as $order_item)
                 <tr>
                     <td>{{$order_item->order_id}}</td>
@@ -96,7 +98,7 @@
 
                     <td>{{$order_item->item_price}}</td>
 
-                    <td>{{$order_item->quantity}}</td>
+                    <td>{{$order_item->quantity}} {{$product}}</td>
 
 {{--                    <td><button type="button" class="btn btn-primary">Item</button></td>--}}
 

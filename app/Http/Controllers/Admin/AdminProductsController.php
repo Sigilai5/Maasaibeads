@@ -54,8 +54,10 @@ class AdminProductsController extends Controller
     public function orderItem($id){
         $order_items = DB::table('order_items')->where("order_id",$id)->get();
 
+        $product = new Product();
 
-        return view('admin.orderItem',['order_items'=>$order_items]);
+
+        return view('admin.orderItem',['order_items'=>$order_items,'product'=>$product]);
 
     }
 

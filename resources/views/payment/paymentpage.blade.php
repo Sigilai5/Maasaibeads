@@ -35,19 +35,28 @@
                                 <li>Total: <span>{{$payment_info['price'] + 300}}</span></li>
                             </ul>
 
-                      <form action="https://www.scentsbygeraldine.co.ke/pay/2.php" method="post">
 
-                          <input type="text" hidden name="1" value="{{$payment_info['phone']}}">
-                          <input type="text" hidden name="2" value="{{$payment_info['price'] + $shipping}}">
-                          <input type="text" hidden name="3" value="{{$payment_info['order_id']}}" hidden="true">
-                          <input type="text" hidden name="4" value="{{$payment_info['email']}}">
+
+
+                            <form action="https://payments.ipayafrica.com/v3/ke" method="post">
+
+                                {{ csrf_field()  }}
+
+                                @foreach($some_data as $key => $value)
+
+                                    <input hidden type="" name="{{$key}}" value="{{$value}}">
+                                @endforeach
+                                <input hidden name="hsh" type="text" value="{{ $generated_hash }}">
 
                           <button class="btn btn-default check_out" type="submit" name="submit" >Proceed To Payment</button>
 
                       </form>
 
+
+
+
 {{--                            <a class="btn btn-default update" href="">Pay with Mpesa</a>--}}
-{{--                            <a class="btn btn-default check_out" id="paypal-button-container"></a>--}}
+                            <a class="btn btn-default check_out" id="paypal-button-container"></a>
                         </div>
                     </div>
 

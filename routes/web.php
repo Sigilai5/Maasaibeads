@@ -134,4 +134,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('test',['uses'=>'ProductsController@test','as'=>'productsTest']);
 
+//Route::post('/test','Controller@getData')->name('test.store');
+
+Route::post('/test',['uses'=>'ProductsController@getData','as'=>'test.store']);
