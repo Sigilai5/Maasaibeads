@@ -98,7 +98,7 @@
 
                     <td>{{$order_item->item_price}}</td>
 
-                    <td>{{$order_item->quantity}} {{$product}}</td>
+                    <td>{{$order_item->quantity}} </td>
 
 {{--                    <td><button type="button" class="btn btn-primary">Item</button></td>--}}
 

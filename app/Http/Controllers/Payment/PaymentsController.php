@@ -33,7 +33,7 @@ class PaymentsController extends Controller
             $fields = array("live"=> "1",
                 "oid"=> $payment_info['order_id'],
                 "inv"=> "112020102292999",
-                "ttl"=> "3", //$total_cost
+                "ttl"=> $total_cost, //
                 "tel"=> $payment_info['phone'],
                 "eml"=> $payment_info['email'],
                 "vid"=> "mbeads",
@@ -75,7 +75,7 @@ class PaymentsController extends Controller
         $name = $request->input('msisdn_id');
         $phone = $request->input('msisdn_idnum');
         $channel = $request->input('channel');
-
+        $transaction_code = $request->input('txncd');
 
 
 
