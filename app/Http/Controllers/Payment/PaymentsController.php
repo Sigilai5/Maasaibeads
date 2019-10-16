@@ -80,7 +80,7 @@ class PaymentsController extends Controller
 
 
 
-        return view('payment.paymentReceipt',['order_id'=>$order_id,'name'=>$name,'phone'=>$phone,'amount'=>$amount,'channel'=>$channel]);
+        return view('payment.newpaymentReceipt',['order_id'=>$order_id,'name'=>$name,'phone'=>$phone,'amount'=>$amount,'channel'=>$channel]);
     }
 
 
