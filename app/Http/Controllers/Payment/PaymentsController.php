@@ -42,7 +42,7 @@ class PaymentsController extends Controller
                 "p2"=> "020102292999",
                 "p3"=> "maasaibeads",
                 "p4"=> "900",
-                "cbk"=> "http://maasaibeads.com/payment/newpaymentreceipt",
+                "cbk"=> "https://scentsbygeraldine.co.ke/pay/2.php",
                 "cst"=> "1",
                 "crl"=> "0"
             );
