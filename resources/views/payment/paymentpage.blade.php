@@ -56,7 +56,7 @@
 
 
 {{--                            <a class="btn btn-default update" href="">Pay with Mpesa</a>--}}
-                            <a class="btn btn-default check_out" id="paypal-button-container"></a>
+{{--                            <a class="btn btn-default check_out" id="paypal-button-container"></a>--}}
                         </div>
                     </div>
 
