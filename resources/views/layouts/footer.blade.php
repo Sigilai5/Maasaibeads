@@ -1,4 +1,4 @@
-{{--<footer id="footer"><!--Footer-->--}}
+<footer id="footer"><!--Footer-->
 {{--    <div class="footer-top">--}}
 {{--        <div class="container">--}}
 {{--            <div class="row">--}}
@@ -145,16 +145,16 @@
 {{--        </div>--}}
 {{--    </div>--}}
 
-{{--    <div class="footer-bottom">--}}
-{{--        <div class="container">--}}
-{{--            <div class="row">--}}
-{{--                <p class="pull-left">Copyright © 2019 BRIAN SIGILAI Inc. All rights reserved.</p>--}}
-{{--                <p class="pull-right">Designed by <span><a target="_blank" href="">Brian Sigilai</a></span></p>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <p class="pull-left">Copyright © 2019 Maasai Beads. All rights reserved.</p>
+                <p class="pull-right">Powered By <span><a target="_blank" href="">GERABU AFRICA</a></span></p>
+            </div>
+        </div>
+    </div>
 
-{{--</footer><!--/Footer-->--}}
+</footer><!--/Footer-->
 
 
 
