@@ -42,7 +42,7 @@ class PaymentsController extends Controller
                 "p2"=> "020102292999",
                 "p3"=> "maasaibeads",
                 "p4"=> "900",
-                "cbk"=> "http://maasaibeads.com/test",
+                "cbk"=> "http://maasaibeads.com/payment/newpaymentreceipt",
                 "cst"=> "1",
                 "crl"=> "0"
             );
@@ -65,6 +65,24 @@ class PaymentsController extends Controller
         }
 
     }
+
+    //iPay Call Back
+    public function newpaymentReceipt(Request $request){
+
+
+        $order_id = $request->input('id');
+        $amount = $request->input('mc');
+        $name = $request->input('msisdn_id');
+        $phone = $request->input('msisdn_idnum');
+        $channel = $request->input('channel');
+
+
+
+
+
+        return view('payment.paymentReceipt',['order_id'=>$order_id,'name'=>$name,'phone'=>$phone,'amount'=>$amount,'channel'=>$channel]);
+    }
+
 
     private function storePaymentInfo($paypalPaymentID, $paypalPayerID)
     {

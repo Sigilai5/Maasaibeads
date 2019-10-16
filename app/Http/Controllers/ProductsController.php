@@ -262,43 +262,7 @@ class ProductsController extends Controller
     }
 
 
-    public function test(Request $request){
 
-
-        $txncd = $request->input('txncd');
-
-        return $txncd;
-
-
-//        //Data needed by iPay a fair share of it obtained from the user from a form e.g email, number etc...
-//        $fields = array("live"=> "1",
-//            "oid"=> "112",
-//            "inv"=> "112020102292999",
-//            "ttl"=> "5",
-//            "tel"=> "0792071275",
-//            "eml"=> "briansigilai@gmail.com",
-//            "vid"=> "mbeads",
-//            "curr"=> "KES",
-//            "p1"=> "airtel",
-//            "p2"=> "020102292999",
-//            "p3"=> "maasaibeads",
-//            "p4"=> "900",
-//            "cbk"=> "http://maasaibeads.com/",
-//            "cst"=> "1",
-//            "crl"=> "0"
-//        );
-//
-//        $datastring =  $fields['live'].$fields['oid'].$fields['inv'].$fields['ttl'].$fields['tel'].$fields['eml'].$fields['vid'].$fields['curr'].$fields['p1'].$fields['p2'].$fields['p3'].$fields['p4'].$fields['cbk'].$fields['cst'].$fields['crl'];
-//        $hashkey ="8fdl0vjofspd23m";//use "demo" for testing where vid also is set to "demo"
-//
-//        /********************************************************************************************************
-//         * Generating the HashString sample
-//         */
-//        $generated_hash = hash_hmac('sha1',$datastring , $hashkey);
-//
-//
-//        return view('test',['some_data'=>$fields,'generated_hash'=>$generated_hash]);
-    }
 
     public function getData(Request $request)
     {

@@ -67,6 +67,7 @@ Route::get('payment/paymentpage',['uses'=>'Payment\PaymentsController@showPaymen
 //process payment & receipt page
 Route::get('payment/paymentreceipt/{paymentID}/{payerID}',['uses'=>'Payment\PaymentsController@showPaymentReceipt','as'=>'showPaymentReceipt']);
 
+Route::get('payment/newpaymentreceipt',['uses'=>'Payment\PaymentsController@newPaymentReceipt','as'=>'newPaymentReceipt']);
 
 /**ADMIN DASHBOARD**/
 
@@ -134,8 +135,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('test',['uses'=>'ProductsController@test','as'=>'productsTest']);
+
 
 //Route::post('/test','Controller@getData')->name('test.store');
 
-Route::post('/test',['uses'=>'ProductsController@getData','as'=>'test.store']);
+//Route::post('/test',['uses'=>'ProductsController@getData','as'=>'test.store']);
