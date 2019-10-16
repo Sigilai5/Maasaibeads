@@ -38,7 +38,7 @@
 
                         <div class="product-image-wrapper" >
                             <div class="single-products" style="border: none;">
-                                <div class="productinfo text-center">
+                                <div class="productinfo text-left">
                                     <img src="{{Storage::disk('local')->url('product_images/'.$item['data']['image'])}}" alt="" style="width: 48rem;" />
                                     <h2>{{$item['data']['name']}}</h2>
                                     <p>{{$item['data']['description']}} - {{$item['data']['type']}}</p>
