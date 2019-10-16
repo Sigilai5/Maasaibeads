@@ -125,7 +125,8 @@ class AdminProductsController extends Controller
             return redirect()->route('adminDisplayProducts')->with('success', 'Image of product name '.$product->name.' has been updated.');
 
 
-        }else{
+        }
+        else{
 
             $error = "No image was selected";
             return$error;

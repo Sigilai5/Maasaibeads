@@ -32,7 +32,8 @@
                     <div class="contactinfo">
                         <ul class="nav nav-pills">
                             <li><a href="#"><i class="fa fa-phone"></i> +254703808145</a></li>
-                            <li><a href="#"><i class="fa fa-envelope"></i> scentsbygeraldine@gmail.com</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i> info@maasaibeads.com</a></li>
+                            <li><a href="#"><i class="fa fa-location-arrow"></i> Location:MARUTI HEIGHTS,Langata Link Road,3rd Floor,Office 3A</a></li>
                         </ul>
                     </div>
                 </div>
@@ -56,7 +57,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="logo pull-left">
-                        <a href="{{route('allProducts')}}"><img src="images/home/logo.jpg" alt="" width="300px" height="250px"/></a>
+                        <a href="{{route('allProducts')}}"><img src="images/home/logo.png" alt="" width="300px" height="250px"/></a>
                     </div>
                     <div class="btn-group pull-right">
 {{--                        <div class="btn-group">--}}
@@ -92,9 +93,11 @@
 
                                     <span class="cart-with-numbers">
 
+
                                         @if(Session::has('cart'))
                                             {{ Session::get('cart')->totalQuantity  }}
                                             @endif
+
 
                                     </span>
 
