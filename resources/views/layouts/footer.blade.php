@@ -124,7 +124,7 @@
                         <ul class="nav nav-pills nav-stacked">
                             <li><a href="#">Company Information</a></li>
                             <li><a href="#">Careers</a></li>
-                            <li><a href="#">Store Location</a></li>
+                            <li><a href="#">Location:MARUTI HEIGHTS,Langata Link Road,3rd Floor,Office 3A</a></li>
                             <li><a href="#">Affillate Program</a></li>
                             <li><a href="#">Copyright</a></li>
                         </ul>

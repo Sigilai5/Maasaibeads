@@ -86,7 +86,7 @@
                             </div>
                             <div class="item">
                                 <div class="col-sm-6">
-                                    <h1><span>MAASAI</span>-BEADS</h1>
+                                    <h1><font color="#0000">MAASAI</font>-<font color="red">B</font><font color="orange">E</font><font color="green">A</font><font color="blue">D</font><font color="#000">S</font></h1>
                                     <h2></h2>
                                     <p>Africa's First online Beauty store. </p>
                                     <button type="button" class="btn btn-default get">Get it now</button>
@@ -99,7 +99,7 @@
 
                             <div class="item">
                                 <div class="col-sm-6">
-                                    <h1><span>MAASAI</span>-BEADS</h1>
+                                    <h1><font color="#0000">MAASAI</font>-<font color="red">B</font><font color="orange">E</font><font color="green">A</font><font color="blue">D</font><font color="#000">S</font></h1>
                                     <h2></h2>
                                     <p>Africa's First online Beauty store. </p>
                                     <button type="button" class="btn btn-default get">Get it now</button>
