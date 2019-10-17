@@ -44,6 +44,13 @@
 {{--                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>--}}
 {{--                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>--}}
 {{--                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>--}}
+                            @if(Auth::check())
+                                <li><a href="/home"><i class="fa fa-lock"></i> Profile</a></li>
+                            @else
+                                <li><a href="/login"><i class="fa fa-lock"></i> Login</a></li>
+                            @endif
+                            {{--                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>--}}
+                            {{--                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>--}}
                             <li><a href="{{route('cartProducts')}}"><i class="fa fa-shopping-cart"></i>
 
                                     <span class="cart-with-numbers">
@@ -56,19 +63,9 @@
 
                                     </span>
 
+                                    </a></li>
 
 
-
-
-                                    Cart</a></li>
-
-                            @if(Auth::check())
-                                <li><a href="/home"><i class="fa fa-lock"></i> Profile</a></li>
-                            @else
-                                <li><a href="/login"><i class="fa fa-lock"></i> Login</a></li>
-                            @endif
-{{--                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>--}}
-{{--                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>--}}
                         </ul>
                     </div>
                 </div>
