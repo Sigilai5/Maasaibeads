@@ -198,7 +198,7 @@ class ProductsController extends Controller
                 $item_id = $cart_item['data']['id'];
                 $item_name = $cart_item['data']['name'];
                 $quantity =$cart_item['quantity'];
-                $item_price = $price = (int) str_replace("KSH","",$cart_item['data']['price']);
+                $item_price = $price = (int) str_replace("KES","",$cart_item['data']['price']);
                 $newItemsInCurrentOrder = array('item_id'=>$item_id,'order_id'=>$order_id,'item_name'=>$item_name,'item_price'=>$item_price,'quantity'=>$quantity);
                 $created_order_items = DB::table('order_items')->insert($newItemsInCurrentOrder);
 

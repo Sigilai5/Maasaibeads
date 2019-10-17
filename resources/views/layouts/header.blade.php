@@ -60,7 +60,7 @@
                                             {{ Session::get('cart')->totalQuantity  }}
                                         @endif
 
-
+                                    Item(s)
                                     </span>
 
                                     </a></li>
