@@ -76,7 +76,7 @@
                                 <div class="col-sm-6">
                                     <h1><font color="#0000">MAASAI</font>-<font color="red">B</font><font color="orange">E</font><font color="green">A</font><font color="blue">D</font><font color="#000">S</font></h1>
                                     <h2></h2>
-                                    <p>AFRICA'S FIRST ONLINE BEAUTY AND ARTS STORE </p>
+                                    <p>Africa's First online Beauty store. </p>
                                     <button type="button" class="btn btn-default get">Get it now</button>
                                 </div>
                                 <div class="col-sm-6">
@@ -174,7 +174,7 @@
 
                 <div class="col-sm-9 padding-right">
                     <div class="features_items"><!--features_items-->
-                        <h2 class="title text-center">Features Items</h2>
+                        <h2 class="title text-center">Featured Items</h2>
 
                         @foreach($products as $product)
 
