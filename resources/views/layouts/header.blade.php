@@ -72,11 +72,63 @@
             </div>
         </div>
     </div><!--/header_top-->
-
     <div class="header-middle" align="center"><!--header-middle-->
 
 
-                        <a href="{{route('allProducts')}}"><img src="images/home/logo.png" alt="" width="350px" height="350px"/></a>
+        <a href="{{route('allProducts')}}"><img src="images/home/logo.png" alt="" width="350px" height="350px"/></a>
+
+        <div class="div_to_hold_images" >
+         <img src="images/home/girl2.jpg">
+        </div>
+
+{{--    <section id="slider"><!--slider-->--}}
+{{--        <div class="container">--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-sm-12">--}}
+
+{{--                    <div id="slider-carousel" class="carousel slide" data-ride="carousel" width="60px" height="40px">--}}
+
+{{--                        <div class="carousel-inner">--}}
+{{--                            <div class="item active">--}}
+
+{{--                                <div class="col-sm-12">--}}
+{{--                                    <img src="images/home/girl1.jpg" class="" height="200px" width="400px"  alt="" />--}}
+{{--                                    --}}{{--                                    <img src="images/home/pricing.png"  class="pricing" alt="" />--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="item">--}}
+{{--                                <div class="col-sm-12">--}}
+
+{{--                                    <img src="images/home/girl2.jpg" class="" height="200px" width="400px" alt="" />--}}
+{{--                                    --}}{{--                                    <img src="images/home/pricing.png"  class="pricing" alt="" />--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+
+{{--                            <div class="item">--}}
+{{--                                <div class="col-sm-12">--}}
+
+{{--                                    <img src="images/home/girl3.jpg" class="" height="200px" width="400px"  alt="" />--}}
+{{--                                    --}}{{--                                    <img src="images/home/pricing.png" class="pricing" alt="" />--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+
+{{--                        </div>--}}
+
+{{--                        <a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">--}}
+{{--                            <i class="fa fa-angle-left"></i>--}}
+{{--                        </a>--}}
+{{--                        <a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">--}}
+{{--                            <i class="fa fa-angle-right"></i>--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section><!--/slider-->--}}
+
+
+
 
 
 

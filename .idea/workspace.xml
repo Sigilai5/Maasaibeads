@@ -3,8 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="a54c7b64-ab43-4872-9bd3-801cfff50db0" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/database/migrations/2019_10_12_071028_rename_phone_in_orders_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/home/slider1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/allproducts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/allproducts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/jewelleryProducts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/jewelleryProducts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/menProducts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menProducts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/perfumesProducts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/perfumesProducts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/womenProducts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/womenProducts.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,17 +135,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/js" />
-      <recent name="$PROJECT_DIR$/resources/views/payment" />
-      <recent name="$PROJECT_DIR$/resources/views" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/images/home" />
       <recent name="$PROJECT_DIR$/public/css" />
       <recent name="$PROJECT_DIR$/storage/app/public/product_images" />
       <recent name="$PROJECT_DIR$/public/fonts" />
       <recent name="$PROJECT_DIR$/public/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/js" />
+      <recent name="$PROJECT_DIR$/resources/views/payment" />
+      <recent name="$PROJECT_DIR$/resources/views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -225,7 +232,7 @@
       <workItem from="1571171724015" duration="15875000" />
       <workItem from="1571227210926" duration="252000" />
       <workItem from="1571228910724" duration="9241000" />
-      <workItem from="1571331636070" duration="1669000" />
+      <workItem from="1571331636070" duration="7125000" />
     </task>
     <servers />
   </component>
