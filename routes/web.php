@@ -74,7 +74,12 @@ Route::get('payment/newpaymentreceipt',['uses'=>'Payment\PaymentsController@newP
 # Route::group(['middleware' => ['restrictToAdmin']], function (){ Paste every admin restricted route here }); //RESTRICTION ALTERNATIVE
 
 //Admin panel
+
+//Display Products
 Route::get('admin/products',['uses'=>'Admin\AdminProductsController@index','as'=>'adminDisplayProducts'])->middleware('restrictToAdmin');
+
+//Display Users
+Route::get('admin/users',['uses'=>'Admin\AdminProductsController@displayUsers','as'=>'adminDisplayUsers'])->middleware('restrictToAdmin');
 
 //Display edit product form in admin
 Route::get('admin/editProductForm/{id}',['uses'=>'Admin\AdminProductsController@editProductForm','as'=>'adminEditProductForm'])->middleware('restrictToAdmin');

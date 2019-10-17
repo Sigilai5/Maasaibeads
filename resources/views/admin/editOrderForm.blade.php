@@ -36,6 +36,6 @@
         </div>
 
     @else
-        <div class="alert alert-danger">Only first level admins can edit products</div>
+        <div class="alert alert-danger">Only first level admins can edit orders</div>
     @endif
 @endsection

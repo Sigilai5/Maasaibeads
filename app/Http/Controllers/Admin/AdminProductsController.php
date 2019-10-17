@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Product;
+use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
@@ -20,6 +21,16 @@ class AdminProductsController extends Controller
         return view('admin.displayProducts',compact('products')); // or ['products'=>$products]
 
     }
+
+    //display users
+    public function displayUsers(){
+
+        $users = User::paginate(100); //User::all();
+
+        return view('admin.displayUsers',compact('users')); // or ['users'=>$users]
+
+    }
+
 
     public function createProductForm(){
         return view('admin.createProductForm');
@@ -216,6 +227,9 @@ class AdminProductsController extends Controller
         return redirect()->route("ordersPanel");
 
     }
+
+
+
 
 
 }
