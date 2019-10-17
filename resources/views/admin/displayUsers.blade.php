@@ -25,10 +25,10 @@
 
             @foreach($users as $user)
                 <tr>
-{{--                    <td>{{$user['id']}}</td>--}}
-{{--                    <td>{{$user['name']}}</td>--}}
-{{--                    <td>{{$user['admin']}}</td>--}}
-{{--                    <td>{{$user['email']}}</td>--}}
+                    <td>{{$user['id']}}</td>
+                    <td>{{$user['name']}}</td>
+                    <td>{{$user['admin']}}</td>
+                    <td>{{$user['email']}}</td>
                     <td>{{$user['admin_level']}}</td>
                     <td><a href="" class="btn btn-primary">Edit Info</a></td>
                     <td><a href=""  class="btn btn-warning">Remove</a></td>

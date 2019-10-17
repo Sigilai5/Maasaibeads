@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a54c7b64-ab43-4872-9bd3-801cfff50db0" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/database/migrations/2019_10_12_071028_rename_phone_in_orders_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/displayUsers.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/editOrderForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/editOrderForm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/displayUsers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/displayUsers.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +26,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/database/migrations" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -228,7 +225,7 @@
       <workItem from="1571171724015" duration="15875000" />
       <workItem from="1571227210926" duration="252000" />
       <workItem from="1571228910724" duration="9241000" />
-      <workItem from="1571331636070" duration="12907000" />
+      <workItem from="1571331636070" duration="13453000" />
     </task>
     <servers />
   </component>
