@@ -77,9 +77,9 @@
 
         <a href="{{route('allProducts')}}"><img src="images/home/logo.png" alt="" width="350px" height="350px"/></a>
 
-        <div class="div_to_hold_images" >
-         <img src="images/home/girl2.jpg">
-        </div>
+{{--        <div class="div_to_hold_images" >--}}
+{{--         <img src="images/home/gera.jpg" width="800px" height="400px">--}}
+{{--        </div>--}}
 
 {{--    <section id="slider"><!--slider-->--}}
 {{--        <div class="container">--}}
