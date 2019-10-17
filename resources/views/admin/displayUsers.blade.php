@@ -29,7 +29,7 @@
                     <td>{{$user['name']}}</td>
                     <td>{{$user['admin']}}</td>
                     <td>{{$user['email']}}</td>
-                    <td>{{$user['admin_level']}}</td>
+                    <td>{{$user['admin_levels']}}</td>
                     <td><a href="" class="btn btn-primary">Edit Info</a></td>
                     <td><a href=""  class="btn btn-warning">Remove</a></td>
 
