@@ -144,7 +144,7 @@ class ProductsController extends Controller
 
         if($cart->items[$id]['quantity'] > 1){
             $product = Product::find($id);
-            $price = (int) str_replace("KSH","",$product['price']);
+            $price = (int) str_replace("KES","",$product['price']);
             $cart->items[$id]['quantity'] = $cart->items[$id]['quantity']-1;
             $cart->items[$id]['totalSinglePrice'] = $cart->items[$id]['quantity'] * $price ;
 
@@ -241,7 +241,7 @@ class ProductsController extends Controller
             foreach ($cart->items as $cart_item){
                 $item_id = $cart_item['data']['id'];
                 $item_name = $cart_item['data']['name'];
-                $item_price = $price = (int) str_replace("KSH","",$cart_item['data']['price']);
+                $item_price = $price = (int) str_replace("KES","",$cart_item['data']['price']);
                 $newItemsInCurrentOrder = array('item_id'=>$item_id,'order_id'=>$order_id,'item_name'=>$item_name,'item_price'=>$item_price);
                 $created_order_items = DB::table('order_items')->insert($newItemsInCurrentOrder);
 

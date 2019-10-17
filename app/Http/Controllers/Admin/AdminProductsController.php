@@ -29,7 +29,7 @@ class AdminProductsController extends Controller
     public function editProductForm($id){
         $product = Product::find($id);
 
-        $product_price = $price = (int) str_replace("KSH","",$product->price);
+        $product_price = $price = (int) str_replace("KES","",$product->price);
 
         return view('admin.editProductForm',['product'=>$product,'product_price'=>$product_price]);
 
