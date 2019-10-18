@@ -51,18 +51,20 @@
                             @endif
                             {{--                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>--}}
                             {{--                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>--}}
-                            <li><a href="{{route('cartProducts')}}"><i class="fa fa-shopping-cart"></i>
 
-                                    <span class="cart-with-numbers">
+                            <span class="cart-with-numbers">
 
 
                                         @if(Session::has('cart'))
-                                            {{ Session::get('cart')->totalQuantity  }}
-                                        @endif
+                                    {{ Session::get('cart')->totalQuantity  }}
+                                @endif
 
                                     </span>
+                            <li><a href="{{route('cartProducts')}}"><i class="fa fa-shopping-cart"></i>
 
-                                    </a></li>
+
+                                </a></li>
+
 
 
                         </ul>
@@ -75,7 +77,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-11">
             <a href="{{route('allProducts')}}"><img src="{{asset('images/home/logo.png')}}" alt="" width="350px" height="350px"/></a><br>
 {{--            <img src="{{asset('images/home/scents.jpg')}}" width="100%" height="500px">--}}
         </div>

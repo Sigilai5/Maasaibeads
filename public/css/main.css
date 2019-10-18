@@ -2529,9 +2529,9 @@ h2.title {
   background: red;
   border-radius:50%;
   padding:4px;
-  position:relative;
-  left:-18px;
-  top:-10px;
+  /*position:relative;*/
+  left: 79px;
+  /*top: -17px;*/
   opacity:0.9;
 }
 
