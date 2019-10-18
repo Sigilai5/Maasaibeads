@@ -112,6 +112,10 @@ Route::post('admin/sendCreateProductForm/',['uses'=>'Admin\AdminProductsControll
 //delete product
 Route::get('admin/deleteProduct/{id}',['uses'=>'Admin\AdminProductsController@deleteProduct','as'=>'adminDeleteProduct'])->middleware('restrictToAdmin');
 
+//delete user
+Route::get('admin/deleteUser/{id}',['uses'=>'Admin\AdminProductsController@deleteUser','as'=>'adminDeleteUser'])->middleware('restrictToAdmin');
+
+
 //update user details
 Route::post('admin/updateUser/{id}',['uses'=>'Admin\AdminProductsController@updateUser','as'=>'adminUpdateUser'])->middleware('restrictToAdmin');
 

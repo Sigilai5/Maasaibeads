@@ -204,6 +204,18 @@ class AdminProductsController extends Controller
 
     }
 
+    //delete user
+    public function deleteUser($id){
+
+        $user = User::find($id);
+
+        User::destroy($id);
+
+        return redirect()->route('adminDisplayUsers')->with('success', 'User has been deleted.');
+
+    }
+
+
     //orders list
     public function ordersPanel(){
 
