@@ -45,9 +45,9 @@
 {{--                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>--}}
 {{--                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>--}}
                             @if(Auth::check())
-                                <li><a href="/home"><i class="fa fa-lock"></i> Profile</a></li>
+                                <li><a href="/home"><i class="fa fa-user"></i></a></li>
                             @else
-                                <li><a href="/login"><i class="fa fa-lock"></i> Login</a></li>
+                                <li><a href="/login"><i class="fa fa-user"></i></a></li>
                             @endif
                             {{--                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>--}}
                             {{--                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>--}}
@@ -71,11 +71,11 @@
             </div>
         </div>
     </div><!--/header_top-->
-    <div class="header-middle" align="center" width="100%"><!--header-middle-->
+    <div class="header-middle" align="center" width="50%"><!--header-middle-->
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-8">
             <a href="{{route('allProducts')}}"><img src="{{asset('images/home/logo.png')}}" alt="" width="350px" height="350px"/></a><br>
 {{--            <img src="{{asset('images/home/scents.jpg')}}" width="100%" height="500px">--}}
         </div>
