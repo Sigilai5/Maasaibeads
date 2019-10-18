@@ -87,6 +87,10 @@ Route::get('admin/editProductForm/{id}',['uses'=>'Admin\AdminProductsController@
 //Display edit product image form in admin
 Route::get('admin/editProductImageForm/{id}',['uses'=>'Admin\AdminProductsController@editProductImageForm','as'=>'adminEditProductImageForm'])->middleware('restrictToAdmin');
 
+//Display edit user form in admin
+Route::get('admin/editUserForm/{id}',['uses'=>'Admin\AdminProductsController@editUserForm','as'=>'adminEditUserForm'])->middleware('restrictToAdmin');
+
+
 //display customer
 Route::get('admin/orderCustomer/{id}',['uses'=>'Admin\AdminProductsController@orderCustomer','as'=>'adminOrderCustomer'])->middleware('restrictToAdmin');
 
@@ -107,6 +111,10 @@ Route::post('admin/sendCreateProductForm/',['uses'=>'Admin\AdminProductsControll
 
 //delete product
 Route::get('admin/deleteProduct/{id}',['uses'=>'Admin\AdminProductsController@deleteProduct','as'=>'adminDeleteProduct'])->middleware('restrictToAdmin');
+
+//update user details
+Route::post('admin/updateUser/{id}',['uses'=>'Admin\AdminProductsController@updateUser','as'=>'adminUpdateUser'])->middleware('restrictToAdmin');
+
 
 //orders control panel
 Route::get('admin/ordersPanel/',['uses'=>'Admin\AdminProductsController@ordersPanel','as'=>'ordersPanel'])->middleware('restrictToAdmin');

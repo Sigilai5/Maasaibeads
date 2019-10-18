@@ -53,6 +53,15 @@ class AdminProductsController extends Controller
 
     }
 
+
+    //display edit user form
+    public function editUserForm($id){
+        $users = DB::table('users')->where("id",$id)->get();
+
+        return view('admin.editUserForm',['users'=>$users]);
+
+    }
+
     //display Customer info
     public function orderCustomer($id){
         $orders = DB::table('orders')->where("id",$id)->get();
@@ -161,6 +170,20 @@ class AdminProductsController extends Controller
         DB::table('products')->where('id',$id)->update($updateArray);
 
         return redirect()->route('adminDisplayProducts')->with('success', 'Product name '.$name.' has been updated.');
+    }
+
+    //update user details
+    public function updateUser(Request $request,$id){
+
+        $user_id = $request->input('user_id');
+        $admin = $request->input('admin');
+        $admin_levels = $request->input('admin_levels');
+
+        $updateArray = array("admin"=>$admin,"admin_levels"=>$admin_levels);
+
+        DB::table('users')->where('id',$user_id)->update($updateArray);
+
+        return redirect()->route('adminDisplayUsers')->with('success', 'User details updated.');
     }
 
 

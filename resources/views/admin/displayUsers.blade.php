@@ -30,7 +30,7 @@
                     <td>{{$user['admin']}}</td>
                     <td>{{$user['email']}}</td>
                     <td>{{$user['admin_levels']}}</td>
-                    <td><a href="" class="btn btn-primary">Edit Info</a></td>
+                    <td><a href="{{ route('adminEditUserForm',['id'=> $user['id'] ])}}" class="btn btn-primary">Edit Info</a></td>
                     <td><a href=""  class="btn btn-warning">Remove</a></td>
 
 
