@@ -17,8 +17,8 @@
                 <th>Admin</th>
                 <th>Email</th>
                 <th>Admin_level</th>
-                <th>Edit</th>
-                <th>Remove</th>
+{{--                <th>Edit</th>--}}
+{{--                <th>Remove</th>--}}
             </tr>
             </thead>
             <tbody>
@@ -30,9 +30,10 @@
                     <td>{{$user['admin']}}</td>
                     <td>{{$user['email']}}</td>
                     <td>{{$user['admin_levels']}}</td>
-                    <td><a href="{{ route('adminEditUserForm',['id'=> $user['id'] ])}}" class="btn btn-primary">Edit Info</a></td>
-                    <td><a href="{{ route('adminDeleteUser',['id' => $user->id ])}}"  class="btn btn-warning">Remove</a></td>
-
+                    @if(Auth::user()->admin_levels == 1)
+                    <td><a href="{{ route('adminEditUserForm',['id'=> $user['id'] ])}}" class="btn btn-primary">Edit User Info</a></td>
+                    <td><a href="{{ route('adminDeleteUser',['id' => $user->id ])}}"  class="btn btn-warning">Remove User</a></td>
+                    @endif
 
                 </tr>
 

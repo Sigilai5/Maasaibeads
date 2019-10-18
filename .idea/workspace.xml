@@ -5,7 +5,8 @@
       <change afterPath="$PROJECT_DIR$/database/migrations/2019_10_12_071028_rename_phone_in_orders_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/editUserForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/editUserForm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/allproducts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/allproducts.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +230,7 @@
       <workItem from="1571331636070" duration="19145000" />
       <workItem from="1571385638549" duration="589000" />
       <workItem from="1571387474004" duration="1208000" />
-      <workItem from="1571389530404" duration="586000" />
+      <workItem from="1571389530404" duration="2067000" />
     </task>
     <servers />
   </component>
