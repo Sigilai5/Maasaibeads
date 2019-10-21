@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a54c7b64-ab43-4872-9bd3-801cfff50db0" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/database/migrations/2019_10_12_071028_rename_phone_in_orders_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,8 +133,8 @@
       <recent name="$PROJECT_DIR$/resources/views" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public/images/home" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public/css" />
       <recent name="$PROJECT_DIR$/storage/app/public/product_images" />
       <recent name="$PROJECT_DIR$/public/fonts" />
@@ -228,7 +228,7 @@
       <workItem from="1571385638549" duration="589000" />
       <workItem from="1571387474004" duration="1208000" />
       <workItem from="1571389530404" duration="4054000" />
-      <workItem from="1571510286996" duration="4513000" />
+      <workItem from="1571510286996" duration="4774000" />
     </task>
     <servers />
   </component>

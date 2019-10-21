@@ -78,7 +78,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-11">
-            <a href="{{route('allProducts')}}"><img src="{{asset('images/home/logo.png')}}" alt="" width="350px" height="350px"/></a><br>
+            <a href="{{route('allProducts')}}"><img src="{{asset('images/home/logo.jpg')}}" alt="" width="350px" height="350px"/></a><br>
 {{--            <img src="{{asset('images/home/scents.jpg')}}" width="100%" height="500px">--}}
         </div>
 
