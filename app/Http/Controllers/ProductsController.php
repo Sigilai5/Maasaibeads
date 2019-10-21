@@ -18,9 +18,14 @@ class ProductsController extends Controller
     public function index(){
 
         $products = Product::paginate(100);  //Product::all();
+
+        $price = (int) str_replace("KES","",$products['price']);
+
+//        $price = number_format($price);
+
         $title = 'Maasaibeads';
 
-        return view('allproducts')->with(compact('products'))->with(compact('title'));
+        return view('allproducts')->with(['products'=>$products,'price'=>$price])->with(compact('title'));
 
     }
 
